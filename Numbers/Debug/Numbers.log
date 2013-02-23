@@ -1,0 +1,21 @@
+﻿Build started 1/5/2013 10:31:33 PM.
+     1>Project "C:\Users\Hoff\Documents\Visual Studio 2010\Projects\Numbers\Numbers\Numbers.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\Numbers.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Numbers.cpp
+         Numbers.cpp
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Hoff\Documents\Visual Studio 2010\Projects\Numbers\Debug\Numbers.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Numbers.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Hoff\Documents\Visual Studio 2010\Projects\Numbers\Debug\Numbers.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Hoff\Documents\Visual Studio 2010\Projects\Numbers\Debug\Numbers.lib" /MACHINE:X86 Debug\Numbers.obj
+         LINK : C:\Users\Hoff\Documents\Visual Studio 2010\Projects\Numbers\Debug\Numbers.exe not found or not built by the last incremental link; performing full link
+         Numbers.vcxproj -> C:\Users\Hoff\Documents\Visual Studio 2010\Projects\Numbers\Debug\Numbers.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Hoff\Documents\Visual Studio 2010\Projects\Numbers\Debug\Numbers.exe;#1" /manifest Debug\Numbers.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\Numbers.unsuccessfulbuild".
+         Touching "Debug\Numbers.lastbuildstate".
+     1>Done Building Project "C:\Users\Hoff\Documents\Visual Studio 2010\Projects\Numbers\Numbers\Numbers.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.15

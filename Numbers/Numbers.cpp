@@ -8,23 +8,22 @@
 using namespace std;
 
 void runCase();
+void fastExp();
 
 clock_t tStart;
 int cases = 0;
 long double threeSqrtFive = 0;
 
-ifstream infile("smallIn.in");
-ofstream outfile("smallOut.out");
-//ifstream infile("largeIn.in");
-//ofstream outfile("largeOut.out");
+//ifstream infile("smallIn.in");
+//ofstream outfile("smallOut.out");
+ifstream infile("largeIn.in");
+ofstream outfile("largeOut.out");
 
 int main() {
 
 	cout.precision(10);
 	outfile.precision(10);
 	tStart = clock();
-	threeSqrtFive = (long double)3 + sqrt((long double)5);
-	cout << threeSqrtFive << endl;
 	infile >> cases;
 	cout << "cases: " << cases << endl;
 	for (int i = 1; i <= cases; i++) {
@@ -41,11 +40,16 @@ int main() {
 }
 
 void runCase() {
-	int number;
+	long long a=3, b=1, number;
 	infile >> number;
-	long double power = pow(threeSqrtFive,number);
-	long double answer2 = fmod(power,(long double)1000);
-	int answer = answer2;
+	for (int i=2; i<=number; i++) {
+		long long newA, newB;
+		newA = 3*a + 5*b;
+		newB = 3*b + a;
+		a = newA % 1000;
+		b = newB % 1000;
+	}
+	long long answer = (2*a - 1) % 1000;
 	outfile << setw( 3 ) << setfill( '0' ) << answer << endl;
 	cout << setw( 3 ) << setfill( '0' ) << answer << endl;
 }
